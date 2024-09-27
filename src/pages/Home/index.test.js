@@ -32,8 +32,13 @@ describe("When a page is created", () => {
   it("a list of events is displayed", () => {
     // to implement
   })
-  it("a list a people is displayed", () => {
-    // to implement
+  it("a list a people is displayed", async () => {
+    render(<Home />);
+
+    await screen.findByText("Samira");
+    await screen.findByText("CEO");
+
+
   })
   it("a footer is displayed", () => {
     // to implement
